@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+}
+
+header {
+    position: sticky;
+    margin-top: 0;
+    top: 0;
+    z-index: 9999;
+    width: 98vw;
+    height: 70px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.692);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    margin-left: 10%;
+    gap: 2rem;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background: none;
+    
+    display: flex;
+
+    align-items: center;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        width: 0;
+        left: 0;
+        height: 2px;
+        content: "";
+        bottom: -7px;
+        background: var(--rosa-choque);
+        transition: 0.3s ease-out;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+li:hover a.menu::before {
+    width: 100%;
+}
+
+a {
+    color: var(--color-nav);
+    margin: 0;
+    position: relative;
+    
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    font-size: 1em;
+    text-align: center;
+
+    animation: fadeup 1s 700ms cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    transition: 0.3s ease-out;
+    &::before {
+        position: absolute;
+        box-sizing: border-box;
+        content: "";
+        width: 0%;
+        inset: 0;
+        color: var(--rosa-choque);
+        overflow: hidden;
+        transition: 0.3s ease-out;
+    }
+    &:hover {
+        color: rgb(255, 61, 245);
+    }
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+
+}
