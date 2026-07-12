@@ -1,8 +1,10 @@
 const audio = document.getElementById("Jane");
 const telaEntrada = document.getElementById("tela-entrada");
+const menu = document.getElementById("menu");
 const btnEntrar = document.getElementById("btn-entrar");
 const inicio = 1;
 const fim = 93;
+menu.style.display = "none";
 
 function controlarFim() {
     if (audio.currentTime >= fim) {
@@ -14,6 +16,7 @@ function controlarFim() {
 btnEntrar.addEventListener("click", () => {
     // 1. Esconde a tela de boas-vindas
     telaEntrada.style.display = "none";
+    menu.style.display = "flex";
     
     // 2. Configura o tempo e toca o áudio
     audio.currentTime = inicio;
