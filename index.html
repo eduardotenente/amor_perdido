@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Sekuya&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="tela-entrada">
+        <button id="btn-entrar">Relembrar</button>
+    </div>
     <header>
         <nav>
             <ul>
@@ -56,51 +59,10 @@
     <footer>
         <p>Criado por Eduardo Tenente |<a href="https://github.com/eduardotenente/amor_perdido" target="_blank" rel="external"> Código no GitHub</a></p>
     </footer>
-    <audio id="Jane" autoplay>
-        <source src="assets/audio/The_Long_Faces_-Jane!.mp3" type="audio/mp3">
+    <audio id="Jane">
+        <source src="assets/audio/jane.mp3" type="audio/mpeg">
     </audio>
 
-<script>
-    const audio = document.getElementById("Jane");
-    const inicio = 1;
-    const fim = 93;
-    audio.addEventListener("loadedmetadata", () => {
-        audio.currentTime = inicio
-        function controlarFim() {
-            if (audio.currentTime >= fim) {
-                audio.pause();
-                audio.removeEventListener("timeupdate", controlarFim);
-            }
-        }
-    audio.addEventListener("timeupdate", controlarFim);
-    // Tenta desmutar depois de iniciar
-    audio.muted = false;
-    });
-
-// GIFs
-// Seleciona todas as imagens ocultas
-const images = document.querySelectorAll('.hidden')
-
-// Configura o observador para detectar entrada e saída
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Adiciona a classe quando a imagem ENTRA na tela
-            entry.target.classList.add('show')
-        } else {
-            // Remove a classe quando a imagem SAÍ da tela
-            entry.target.classList.remove('show')
-        }
-    })
-}, {
-    // Dispara o efeito quando pelo menos 15% da imagem estiver visível
-    threshold: 0.15 
-})
-
-// Vincula cada imagem ao observador
-images.forEach(image => {
-    observer.observe(image)
-})
-    </script>
+<script src="assets/js/global.js"></script>
 </body>
 </html>
