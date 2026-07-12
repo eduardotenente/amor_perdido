@@ -18,18 +18,17 @@ body {
     align-items: center;
     z-index: 9999;
     color: var(--color-text);
-    font-family: sans-serif;
 }
 
 #btn-entrar {
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     background: var(--color-text);
     color: var(--color-bg);
     border: none;
-    border-radius:5px;
-    font-weight: bold;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
 }
 
 header {
