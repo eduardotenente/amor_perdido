@@ -1,19 +1,21 @@
 // Aúdio
-const audio = document.getElementById("Jane")
-const inicio = 1
-const fim = 93
+const audio = document.getElementById("Jane");
+const inicio = 1;
+const fim = 93;
 audio.addEventListener("loadedmetadata", () => {
-    audio.currentTime = inicio
-    function controlarFim() {
-        if (audio.currentTime >= fim) {
-            audio.pause()
-            audio.removeEventListener("timeupdate", controlarFim)
-        }
+audio.currentTime = inicio
+
+function controlarFim() {
+    if (audio.currentTime >= fim) {
+    audio.pause();
+    audio.removeEventListener("timeupdate", controlarFim);
     }
-audio.addEventListener("timeupdate", controlarFim)
+}
+audio.addEventListener("timeupdate", controlarFim);
 // Tenta desmutar depois de iniciar
-audio.muted = false
-})
+audio.muted = false;
+});
+
 
 // GIFs
 // Seleciona todas as imagens ocultas

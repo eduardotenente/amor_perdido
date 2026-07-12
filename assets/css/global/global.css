@@ -103,7 +103,7 @@ a {
 .card__image {
     width: 98vw;
     gap: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     position: relative;
     display: flex;
     flex-flow: column nowrap;
