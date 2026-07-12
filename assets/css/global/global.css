@@ -28,8 +28,8 @@ header {
 ul {
     display: flex;
     width: 100%;
-    margin-left: 10%;
-    gap: 2rem;
+    margin-left: 3%;
+    gap: 1.5rem;
 }
 
 li {
