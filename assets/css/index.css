@@ -2,3 +2,5 @@
 @import url(global/normalize.css);
 @import url(global/variables.css);
 @import url(global/fonts.css);
+@import url(ui/buttons/button_github.css);
+@import url(ui/buttons/button_entrance.css);

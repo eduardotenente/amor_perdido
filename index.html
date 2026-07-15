@@ -14,8 +14,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Sekuya&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="tela-entrada">
-        <button id="btn-entrar">Relembrar</button>
+    <div id="tela-entrada"> 
+        <button class="button">
+        <svg
+            class="button-cosm"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#000000"
+            width="128"
+            height="128"
+            viewBox="0 0 256 256"
+            id="Flat"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+            d="M243.07324,157.43945c-1.2334-1.47949-23.18847-27.34619-60.46972-41.05859-1.67579-17.97412-8.25293-34.36328-18.93653-46.87158C149.41309,52.8208,128.78027,44,104,44,54.51074,44,22.10059,88.57715,20.74512,90.4751a3.99987,3.99987,0,0,0,6.50781,4.65234C27.5625,94.6958,58.68359,52,104,52c22.36816,0,40.89648,7.85107,53.584,22.70508,8.915,10.437,14.65625,23.9541,16.65528,38.894A133.54185,133.54185,0,0,0,136,108c-25.10742,0-46.09473,6.48486-60.69434,18.75391-12.65234,10.63379-19.91015,25.39355-19.91015,40.49463a43.61545,43.61545,0,0,0,12.69336,31.21923C76.98438,207.3208,89.40234,212,104,212c23.98047,0,44.37305-9.4668,58.97461-27.37744,12.74512-15.6333,20.05566-37.145,20.05566-59.01953,0-.1128-.001-.22559-.001-.33838,33.62988,13.48486,53.62207,36.96631,53.89746,37.2959a4.00015,4.00015,0,0,0,6.14648-5.1211ZM104,204c-27.89746,0-40.60449-19.05078-40.60449-36.75146C63.39551,142.56592,86.11621,116,136,116a124.37834,124.37834,0,0,1,38.97266,6.32617q.05712,1.63038.05761,3.27686C175.03027,177.07129,139.29785,204,104,204Z"
+            ></path>
+        </svg>
+        <svg
+            class="highlight"
+            viewBox="0 0 144.75738 77.18431"
+            preserveAspectRatio="none"
+        >
+            <g transform="translate(-171.52826,-126.11624)">
+            <g
+                fill="none"
+                stroke-width="17"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+            >
+                <path
+                d="M180.02826,169.45123c0,0 12.65228,-25.55115 24.2441,-25.66863c6.39271,-0.06479 -5.89143,46.12943 4.90937,50.63857c10.22345,4.2681 24.14292,-52.38336 37.86455,-59.80493c3.31715,-1.79413 -5.35094,45.88889 -0.78872,58.34589c5.19371,14.18125 33.36934,-58.38221 36.43049,-56.91633c4.67078,2.23667 -0.06338,44.42744 5.22574,47.53647c6.04041,3.55065 19.87185,-20.77286 19.87185,-20.77286"
+                ></path>
+            </g>
+            </g>
+        </svg>
+        Relembrar
+        </button>
+        <svg height="0" width="0">
+        <filter id="handDrawnNoise">
+            <feTurbulence
+            result="noise"
+            numOctaves="8"
+            baseFrequency="0.1"
+            type="fractalNoise"
+            ></feTurbulence>
+            <feDisplacementMap
+            yChannelSelector="G"
+            xChannelSelector="R"
+            scale="3"
+            in2="noise"
+            in="SourceGraphic"
+            ></feDisplacementMap>
+        </filter>
+        <filter id="handDrawnNoise2">
+            <feTurbulence
+            result="noise"
+            numOctaves="8"
+            baseFrequency="0.1"
+            seed="1010"
+            type="fractalNoise"
+            ></feTurbulence>
+            <feDisplacementMap
+            yChannelSelector="G"
+            xChannelSelector="R"
+            scale="3"
+            in2="noise"
+            in="SourceGraphic"
+            ></feDisplacementMap>
+        </filter>
+
+        <filter id="handDrawnNoiset">
+            <feTurbulence
+            result="noise"
+            numOctaves="8"
+            baseFrequency="0.1"
+            type="fractalNoise"
+            ></feTurbulence>
+            <feDisplacementMap
+            yChannelSelector="G"
+            xChannelSelector="R"
+            scale="6"
+            in2="noise"
+            in="SourceGraphic"
+            ></feDisplacementMap>
+        </filter>
+        <filter id="handDrawnNoiset2">
+            <feTurbulence
+            result="noise"
+            numOctaves="8"
+            baseFrequency="0.1"
+            seed="1010"
+            type="fractalNoise"
+            ></feTurbulence>
+            <feDisplacementMap
+            yChannelSelector="G"
+            xChannelSelector="R"
+            scale="6"
+            in2="noise"
+            in="SourceGraphic"
+            ></feDisplacementMap>
+        </filter>
+        </svg>
     </div>
     <header id="menu">
         <nav>
@@ -56,8 +155,18 @@
             <h2 class="margin hidden">Está na hora de deixar o passado para trás.</h2>
         </section>
     </main>
-    <footer>
-        <p>Criado por Eduardo Tenente |<a href="https://github.com/eduardotenente/amor_perdido" target="_blank" rel="external"> Código no GitHub</a></p>
+    <footer class="hidden">
+        <p>
+            Criado por Eduardo Tenente
+        </p>
+            <a href="https://github.com/eduardotenente/amor_perdido" target="_blank" rel="external"> 
+                <button class="button__github">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
+                    </svg>
+                    <p class="text">Código no GitHub</p>
+                </button>
+            </a>
     </footer>
     <audio id="Jane">
         <source src="assets/audio/jane.mp3" type="audio/mpeg">

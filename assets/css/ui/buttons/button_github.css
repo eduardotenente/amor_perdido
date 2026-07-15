@@ -1,0 +1,39 @@
+/* Button GitHub */
+/* From Uiverse.io by kamehame-ha */ 
+.button__github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 2px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button__github .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button__github svg path {
+  transition: 400ms;
+}
+
+.button__github:hover {
+  background-color: var(--color-text);
+}
+
+.button__github:hover .text {
+  color: #181717;
+}
+
+.button__github:hover svg path {
+  fill: #181717;
+}

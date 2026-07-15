@@ -1,7 +1,7 @@
 const audio = document.getElementById("Jane");
 const telaEntrada = document.getElementById("tela-entrada");
 const menu = document.getElementById("menu");
-const btnEntrar = document.getElementById("btn-entrar");
+const btnEntrar = document.querySelector("button");
 const inicio = 1;
 const fim = 93;
 menu.style.display = "none";
