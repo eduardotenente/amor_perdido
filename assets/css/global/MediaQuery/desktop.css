@@ -1,0 +1,20 @@
+@media screen and (min-width: 992px) {
+    .card__image img {
+        width: 75%;
+    }
+
+    .card__image h2 {
+        width: 70%;
+        margin-top: 45%;
+        font-size: 2em;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+
+    .button__github {
+        padding: 15px 15px;
+        font-size: 1em;
+    }
+}
