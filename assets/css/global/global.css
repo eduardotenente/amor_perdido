@@ -40,10 +40,19 @@ body {
     border: 1.5px solid rgba(255, 255, 255, 0.18);
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
 ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-left: 5%;
     gap: 1.5rem;
 }
 
@@ -54,6 +63,7 @@ li {
     background: none;
     
     display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 
@@ -115,6 +125,14 @@ a {
   }
 }
 
+#card__hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
 .card__image {
     width: 98vw;
     gap: 50px;
@@ -164,9 +182,4 @@ footer {
     gap: 5px;
     height: 100px;
     margin-top: -5%;
-}
-
-
-@media screen and (min-width: 767px) {
-
 }

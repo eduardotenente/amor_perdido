@@ -4,3 +4,5 @@
 @import url(global/fonts.css);
 @import url(ui/buttons/button_github.css);
 @import url(ui/buttons/button_entrance.css);
+@import url(global/MediaQuery/tablet.css);
+@import url(global/MediaQuery/desktop.css);

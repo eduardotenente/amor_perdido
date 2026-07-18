@@ -1,0 +1,29 @@
+@media screen and (min-width: 767px) {
+    ul {
+        gap: 5rem;
+        margin-left: none;
+    }
+    
+    li > a {
+        font-size: 1.3em;
+    }
+
+    .card__image {
+        width: 90vw;
+    }
+
+    .card__image img {
+        width: 85%;
+        border-radius: 10px;
+    }
+
+    .card__image h2 {
+        width: 80%;
+        margin-top: 50%;
+        font-size: 1.7em;
+    }
+
+    .card__image .margin {
+        margin-top: 34%;
+    }
+}
